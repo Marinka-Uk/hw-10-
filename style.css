@@ -14,3 +14,12 @@ body {
     border-radius: 90%;
     position: relative;
 }
+
+
+
+ .target {
+     width: 50px;
+     height: 50px;
+     background-color: rgb(30, 0, 255);
+     position: absolute;
+ }

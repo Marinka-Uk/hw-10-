@@ -73,3 +73,50 @@
 
 
 //3
+
+
+// let score = 0;
+// let timeLeft = 15;
+// const target = document.getElementById('target');
+// const scoreDisplay = document.getElementById('score');
+
+// function moveTarget() {
+//     const x = Math.floor(Math.random() * (window.innerWidth - 50));
+//     const y = Math.floor(Math.random() * (window.innerHeight - 50));
+//     target.style.left = x + 'px';
+//     target.style.top = y + 'px';
+// }
+
+// target.addEventListener('click', () => {
+//     score++;
+//     scoreDisplay.textContent = `Очки: ${score}`;
+//     moveTarget();
+// });
+
+// const intervalId = setInterval(() => {
+//     timeLeft--;
+//     if (timeLeft <= 0) {
+//         clearInterval(intervalId);
+//         alert(`Game over! Your points: ${score}`);
+//         target.style.display = 'none';
+//     }
+// }, 1000);
+
+// moveTarget();
+
+
+
+//4
+
+ document.getElementById('timer-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const timeInput = document.getElementById('tm-input').value;
+            const timerMessage = document.getElementById('timer-message');
+
+            timerMessage.textContent = `Таймер запущено на ${timeInput} секунд.`;
+
+            setTimeout(() => {
+                timerMessage.textContent = 'Час вийшов!';
+            }, timeInput * 1000);
+        });
+

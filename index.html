@@ -7,12 +7,26 @@
     <title>Асинхронність</title>
 </head>
 <body>
-    <div class="animation" id="animation1"></div>
-    <div class="animation" id="animation2"></div>
-    <div class="animation" id="animation3"></div>
+     <!-- <div class="animation" id="animation1"></div>
+    <div class="animation" id="animation2"></div> 
+    <div class="animation" id="animation3">
+
+            <h1>Game</h1>
+            <div id="score">Points: 0</div>
+            <div class="target" id="target"></div>
+    </div>
+<div class="animation" id="animation4"> -->
 
 
 
+    <h1>Контроль часу</h1>
+    <form id="timer-form">
+        <label for="time-input">Введіть час у секундах:</label>
+        <input type="number" id="tm-input" required>
+        <button type="submit">Запустити таймер</button>
+    </form>
+    <div id="timer-message"></div>
+    
 
     <script type="module" src="./index.js"></script>
 </body>
